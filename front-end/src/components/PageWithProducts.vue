@@ -1,10 +1,9 @@
 <template>
-  <div>
-    <ul>
-      <product v-for="productItem of productList" :key="productItem.id" :product-item="productItem" />
-    </ul>
+  <div class="md-layout">
+      <product class="md-layout-item md-gutter md-medium-size-33 md-small-size-50 md-xsmall-size-100"
+               v-for="productItem of productList" :key="productItem.id" :product-item="productItem"
+      />
   </div>
-
 </template>
 
 <script>
@@ -18,6 +17,6 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 
 </style>

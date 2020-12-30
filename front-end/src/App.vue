@@ -1,14 +1,19 @@
 <template>
   <div id="app">
 <!--    <navigation></navigation>-->
-    <PageWithProducts
-      v-bind:productList="productList"
-    />
+    <div class="md-layout">
+      <NavigationZone class="md-layout-item md-size-30">Navigation</NavigationZone>
+      <PageWithProducts class="md-layout-item"
+          v-bind:productList="productList"
+      />
+    </div>
+
   </div>
 </template>
 
 <script>
 import PageWithProducts from "@/components/PageWithProducts";
+import NavigationZone from "@/components/NavigationZone";
 export default {
   name: 'App',
   data() {
@@ -21,6 +26,7 @@ export default {
     }
   },
   components: {
+    NavigationZone,
     PageWithProducts
   }
 }

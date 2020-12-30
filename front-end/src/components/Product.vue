@@ -32,26 +32,6 @@ export default {
 }
 </script>
 
-<style scoped >
-
-.md-layout-item {
-  min-height: 40px;
-  margin-top: 4%;
-  margin-bottom: 4%;
-  width: 100%;
-}
-img {
-  width: 50%;
-}
-span {
-  color: red;
-  font-weight: bolder;
-}
-.md-card {
-  width: 320px;
-  margin: 4px;
-  display: inline-block;
-  vertical-align: top;
-}
+<style scoped>
 
 </style>
