@@ -1,17 +1,27 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+<!--    <navigation></navigation>-->
+    <PageWithProducts
+      v-bind:productList="productList"
+    />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import PageWithProducts from "@/components/PageWithProducts";
 export default {
   name: 'App',
+  data() {
+    return{
+      productList: [
+        {id: 1, title: 'Iphone', price: '10', shopURL: ''},
+        {id: 2, title: 'Android', price: '100', shopURL: ''},
+        {id: 3, title: 'Nokia', price: '20', shopURL: ''},
+      ]
+    }
+  },
   components: {
-    HelloWorld
+    PageWithProducts
   }
 }
 </script>
